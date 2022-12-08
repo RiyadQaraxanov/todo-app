@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.text{
+    width: 100%;
+    padding-left: 48px;
+    border: none;
+    outline: none;
+    background-color: #25273D;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+}
+.completed .text{
+    color: #4D5067;
+    text-decoration:line-through;
+}
+.text-div{
+    padding-left: 24px;
+    position: relative;
+    background-color: #25273D;
+    height: 64px;
+    border-bottom: 1px solid #393A4B;
+}
+.task-container{
+    border-radius: 5px;
+}
+.text-div::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    border-radius: 50%;
+    border: 1px solid #393A4B;
+    cursor: pointer;
+}
+.text-div.completed svg{
+    position: absolute;
+    top: 28px;
+    left: 31px;
+    z-index: 1;
+}
+.text-div.completed::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 1px solid #393A4B;
+    cursor: pointer;
+    background-image: url(../images/checked.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

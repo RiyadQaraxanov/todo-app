@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.input{
+    width: 100%;
+    height: 64px;
+    padding-left: 48px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #25273D;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.input::-webkit-input-placeholder { 
+    font-family: 'Josefin Sans', sans-serif;
+}
+.input:-moz-placeholder { 
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+.input-div{
+    padding-left: 24px;
+    position: relative;
+    background-color: #25273D;
+    margin-bottom: 24px;
+    align-items: center;
+    border-radius: 5px;
+}
+.input-div::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    border: 1px solid #393A4B;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.header-text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    letter-spacing: 15px;
+    font-weight: 700;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 540px;
+    margin-bottom: 50px;
+}
